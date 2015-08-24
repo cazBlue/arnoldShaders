@@ -1,0 +1,18 @@
+https://support.solidangle.com/display/mayatut/Creating+the+Stereoscopic+Panoramic+Camera
+
+convert vs 2010 project to 64 bit
+
+properties>configuration manager - set to 64 bit 
+
+this is due to trying to compile against a 64 bit library in 32 bit mode, not compatible
+
+change directory in visual studio console using cd %ARNOLD_PATH%
+
+doing things across different directories didn't work to well
+
+for testing I had to put the new dll in the same folder as the kicker exe
+
+
+commands used:
+
+see images folder

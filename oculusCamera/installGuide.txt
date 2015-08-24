@@ -1,0 +1,22 @@
+****
+Arnold Oculus Camera deployment guide
+
+tested with software versions:
+    Maya 2015
+    Arnold 1.2.0.1 (from maya help menu)
+    SDK Arnold-4.2.3.1-windows
+
+compiled 2015 by Callan Winfield
+****
+
+steps to deploy
+
+1: copy contents of shaders to:
+        C:\solidangle\mtoadeploy\2015\shaders
+
+2: copy contents of python to:
+        C:\solidangle\mtoadeploy\2015\scripts\mtoa\ui\ae
+
+boot Maya, create a camera, look under the "Arnold" menu, select "oculusCamera" and continue on your merry rending way
+
+want this in a bat file? let me know!

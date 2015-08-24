@@ -1,0 +1,13 @@
+additional:
+
+download SDK version to match the installed version of Arnold.
+
+project must be pointed at SDK include and LIB folders
+
+Stand in .ass files need to point at compiled .dll
+
+
+misc:
+64bit project
+
+TRUE altered to true

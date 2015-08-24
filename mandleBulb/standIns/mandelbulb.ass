@@ -1,0 +1,29 @@
+procedural
+{
+ name cube
+ dso "C:/Users/Lee/Documents/mandelbulb.dll"
+ load_at_init on
+ matrix 
+  1 0 0 0
+  0 1 0 0
+  0 0 1 0
+  0 0 0 1 
+ declare gridsize constant INT
+ gridsize 1200
+ declare max_iter constant INT
+ max_iter 9
+ declare power constant FLOAT
+ power 8
+ declare spheremult constant FLOAT
+ spheremult 1
+ declare orbitthresh constant FLOAT
+ orbitthresh 0.05
+ declare chunks constant INT
+ chunks 25
+ declare threads constant INT
+ threads 50
+ declare julia constant BOOL
+ julia off
+ declare Cval constant POINT
+ Cval -0 1 0
+}

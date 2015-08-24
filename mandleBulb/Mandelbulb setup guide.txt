@@ -1,0 +1,42 @@
+mandleBuld setup:
+
+There are two key elements to rendering the Mandelbulb with Arnold spheres
+1:.dll file
+	The dll file must be compiled against the currently installed version of Arnold
+	the version currently compiled with this document is for Arnold Core 4.2.4.1
+	Know the url for the .dll
+	
+2: .ass file
+	this file is loaded into an Arnold stand in object. This is a simple text file and can be opened as such
+	You must ensure the following path matches your current setup
+	
+	dso "" must be the path to the compiled dll
+	
+	Values changed in this document will alter aspects of the Mandelbulb
+	
+	more information:
+		https://support.solidangle.com/display/mayatut/How+to+Render+a+Mandelbulb+with+MtoA
+		https://support.solidangle.com/display/ARP/Large+Datasets+from+Procedurals
+
+		
+
+rendering sequences:
+If you want to render an animated sequence first work out which values of the mandelbulb you want to animate (what values need to change how much per frame)
+
+we can then modify the batch.py to generate a sequence of .ass files, one for each frame
+
+the standIn should follow the following naming convention:
+
+mandelbulb.##.ass
+	where mandelbulb is the filename
+
+Required expression for frame update
+	the frame attribute on the arnoldStandInShape does not auto update. Attach the following expression
+	ArnoldStandInShape.frameNumber = frame
+	where ArnoldStandInShape is the name of the shape
+	(example scene included in bulba_Project)
+	
+	
+	
+	
+	
