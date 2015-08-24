@@ -1,8 +1,12 @@
 # arnoldShaders
 visual studio projects to compile shaders for the Arnold rendering engine
 
-compiled versions for Maya 2015 and deployment guides:
-https://www.dropbox.com/sh/v91y9vk1yl6hlr0/AAAzlUJSyZngL7_1JzYut-BSa?dl=0
+Projects include compiled dlls, libs deployment guides etc
+
+Built for Maya 2015 and arnold versions:
+  Arnold 1.2.0.1 (from maya help menu)
+  SDK Arnold-4.2.3.1-windows
+
 
 Current projects:
 MandleBulb
